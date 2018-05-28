@@ -9,9 +9,7 @@ require 'cgi/util'
 Pathname('vendor/bundle/ruby').children[0].join('gems').each_child {|g| $:.unshift "#{g}/lib" }
 require 'slim'
 
-
-# todo: determine path
-ROOT_URL = Pathname.new 'http://www.puclibrary.net/mediaservices/'
+ROOT_URL = Pathname.new 'your/server/url'
 
 template = <<~SLIM
   doctype html
